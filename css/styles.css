@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  margin: 0 50px;
+  padding: 30px 50px;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.photo-gallery img {
+  width: 100%;
+  padding: 20px;
+}
