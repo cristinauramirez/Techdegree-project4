@@ -30,3 +30,42 @@ input {
   width: 100%;
   padding: 20px;
 }
+
+.lightbox .lb-image {
+  border: none;
+  border-radius: 0;
+  max-width: 600px;
+  max-height: 400px;
+}
+
+.lightboxOverlay {
+  opacity: .9;
+  background-color: #4c4e51;
+}
+
+.lb-nav a.lb-prev,
+.lb-nav a.lb-next {
+  opacity: 1;
+  position: fixed;
+  top: 0;
+}
+
+.lb-prev,
+.lb-next {
+  max-width: 100px !important;
+}
+
+.lb-data .lb-caption {
+  font-size: 17px;
+}
+
+.lb-details {
+  margin: 50px;
+  color: white;
+}
+
+.lb-data .lb-close {
+  position: absolute;
+  top: -40px;
+  margin-left: 565px;
+}
