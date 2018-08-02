@@ -21,11 +21,6 @@ input {
   font-size: 15px;
 }
 
-.photo-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
 .photo-gallery img {
   width: 100%;
   padding: 20px;
@@ -46,7 +41,6 @@ input {
 .lb-nav a.lb-prev,
 .lb-nav a.lb-next {
   opacity: 1;
-  position: fixed;
   top: 0;
 }
 
@@ -65,7 +59,18 @@ input {
 }
 
 .lb-data .lb-close {
-  position: absolute;
-  top: -40px;
-  margin-left: 565px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .lb-nav a.lb-prev,
+  .lb-nav a.lb-next {
+    position: fixed;
+  }
+
 }
